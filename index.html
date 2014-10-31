@@ -1,0 +1,132 @@
+<html>
+
+<h2 style="font-size:16">Burç Hesaplama</h2>
+
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<script language="javascript" type="text/javascript">
+
+function sunsign() {
+   document.form1.date.selectedIndex;
+   document.form1.month.selectedIndex;
+   document.form1.sign.value;
+   if (document.form1.month.selectedIndex == 1 && document.form1.date.selectedIndex <=19) {document.form1.sign.value = "Oğlak";}
+   if (document.form1.month.selectedIndex == 1 && document.form1.date.selectedIndex >=20) {document.form1.sign.value = "Kova";}
+   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex <=18) {document.form1.sign.value = "Kova";}
+   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex >=19) {document.form1.sign.value = "Balık";}
+   if (document.form1.month.selectedIndex == 3 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Balık";}
+   if (document.form1.month.selectedIndex == 3 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Koç";}
+   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Koç";}
+   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Boğa";}
+   if (document.form1.month.selectedIndex == 5 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Boğa";}
+   if (document.form1.month.selectedIndex == 5 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "İkizler";}
+   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "İkizler";}
+   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Yengeç";}
+   if (document.form1.month.selectedIndex == 7 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Yengeç";}
+   if (document.form1.month.selectedIndex == 7 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Aslan";}
+   if (document.form1.month.selectedIndex == 8 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Aslan";}
+   if (document.form1.month.selectedIndex == 8 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Başak";}
+   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Başak";}
+   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Terazi";}
+   if (document.form1.month.selectedIndex == 10 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Terazi";}
+   if (document.form1.month.selectedIndex == 10 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Akrep";}
+   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex <=21) {document.form1.sign.value = "Akrep";}
+   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex >=22) {document.form1.sign.value = "Yay";}
+   if (document.form1.month.selectedIndex == 12 && document.form1.date.selectedIndex <=20) {document.form1.sign.value = "Yay";}
+   if (document.form1.month.selectedIndex == 12 && document.form1.date.selectedIndex >=21) {document.form1.sign.value = "Oğlak";}
+
+   if (document.form1.month.selectedIndex == "x" || document.form1.date.selectedIndex == "y") return;
+ }
+
+function validate() {
+   if (document.form1.month.selectedIndex == 2 && document.form1.date.selectedIndex > 29) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 4 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 6 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 9 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
+   if (document.form1.month.selectedIndex == 11 && document.form1.date.selectedIndex == 31) {alert("Lütfen geçerli tarih giriniz."); return false;}
+else{
+return true;
+}
+ }
+
+</script>
+
+<form name="form1">
+<table border="0" bgcolor="gree" cellspacing="0" cellpadding="1">
+  <tr>
+    <td>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Ay&nbsp;</b></font>
+    </td>
+    <td>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Gün&nbsp;</b></font>
+    </td>
+    <td rowspan="2">
+        <font size="3" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;&nbsp;<b>:</b>&nbsp;</b></font>
+    </td>
+    <td>
+        <font size="1" face="verdana, arial, helvetica, sans-serif"><b>&nbsp;Burcunuz&nbsp;</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+                    &nbsp;<select name="month">
+                    <option value="x" selected>Seçiniz</option>
+                    <option value="1">Ocak</option>
+                    <option value="2">Şubat</option>
+                    <option value="3">Mart</option>
+                    <option value="4">Nisan</option>
+                    <option value="5">Mayis</option>
+                    <option value="6">Haziran</option>
+                    <option value="7">Temmuz</option>
+                    <option value="8">Ağustos</option>
+                    <option value="9">Eylül</option>
+                    <option value="10">Ekim</option>
+                    <option value="11">Kasım</option>
+                    <option value="12">Aralık</option>
+                    </select>
+    </td>
+    <td>
+                    &nbsp;<select name="date" onChange="validate()">
+                    <option value="y" selected>Seçiniz</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    </select>
+    </td>
+    <td>
+        &nbsp;<input name="sign" size="13" value="..." />&nbsp;<input type="button" value="Burçunu bul" onClick="sunsign()">
+    </td>
+  </tr>
+</table>
+</form>
+		</div> 
+	</div>  
+    </html>
